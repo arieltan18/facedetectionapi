@@ -35,7 +35,7 @@ app.get('/profile/:id', (req,res)=> { profile.handleProfileGet(req, res, db) })
 
 app.put('/image', (req,res)=> { image.handleImage(req, res, db) })
 
-app.put('imageurl', (req, res) => { image.handleApiCall(req,res) })
+app.put('/imageurl', (req, res) => { image.handleApiCall(req,res) })
 
 // bcrypt.hash("bacon", null, null, function(err, hash) {
 //     // Store hash in your password DB.
